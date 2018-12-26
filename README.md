@@ -9,6 +9,10 @@ The job should contain the follow fields:
 - Date
 - Job Status
 
+Login: 
+- email: hanjeahwan@gmail.com
+- password: abc123
+
 ### Front-end tech
 Deploy with [Netlify](https://www.netlify.com). Demo URL [https://pulsifi.netlify.com/](https://pusifi.netlify.com/).
 * VueJS
