@@ -11,8 +11,8 @@ const service = axios.create({
 // request interceptor
 service.interceptors.request.use((config) => {
     // Do something before request is sent
-    // if (store.state.user.token) {
-    // config.headers['Authorization'] = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NDU4MjI3MDEsImV4cCI6MTU0NTgyNjMwMX0.-7Z0D2rfvhMWCZZZUu59pM1cspdwmGzg84ovFx6lmvI`
+
+    config.headers['Authorization'] = `Bearer ${store.state.token}`
 
     return config;
 }, (error) => {
