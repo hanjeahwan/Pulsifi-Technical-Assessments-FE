@@ -17,7 +17,7 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 
 workbox.routing.registerNavigationRoute('/index.html');
 
-workbox.router.registerRoute(
+workbox.routing.registerRoute(
     'https://nestjs-pulsifi.herokuapp.com/*',
     workbox.strategies.staleWhileRevalidate({
         cacheName: 'job',
