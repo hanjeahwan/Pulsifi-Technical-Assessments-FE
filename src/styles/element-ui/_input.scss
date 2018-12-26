@@ -1,0 +1,12 @@
+%default-input-stye {
+    font-size: $font-size-base;
+
+    &::placeholder {
+        color: #c0c4cc;
+        font-size: $font-size-base;
+    }
+}
+
+.el-input__inner {
+    @extend %default-input-stye;
+}

@@ -1,0 +1,11 @@
+.el-dialog {
+    width: 90%;
+
+    @include media-breakpoint-up(md) {
+        width: 80%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 50%;
+    }
+}

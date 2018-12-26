@@ -1,0 +1,12 @@
+
+
+.el-icon-loading {
+  font-size: 1.33333em;
+  line-height: .75em;
+  vertical-align: -.0667em;
+  animation: rotating 2s linear infinite;
+
+  &:before {
+    content: "\E633";
+  }
+}

@@ -1,0 +1,143 @@
+@keyframes statusProcessing {
+    0% {
+        transform: scale(.8);
+        opacity: .5
+    }
+
+    to {
+        transform: scale(2.4);
+        opacity: 0
+    }
+}
+
+.quill-editor {
+    line-height: 1.5;
+
+    .ql-toolbar.ql-snow {
+        border-color: #dcdfe6;
+        border-radius: 4px 4px 0 0;
+        padding: 8px !important;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .ql-container.ql-snow {
+        border-color: #dcdfe6;
+        border-radius: 0 0 4px 4px;
+        font-family: "Roboto", sans-serif;
+
+    }
+
+    .ql-editor {
+        padding: 10px 15px;
+        min-height: 100px;
+
+        span,
+        p,
+        strong,
+        em,
+        u,
+        li {
+            font-size: $font-size-base;
+            color: $body-color;
+        }
+
+        &.ql-blank::before {
+            font-style: normal;
+            color: #c0c4cc;
+            font-size: $font-size-base;
+        }
+    }
+
+    .ql-formats {
+        margin-bottom: 0 !important;
+        vertical-align: text-top;
+    }
+
+    .ql-snow {
+        .ql-picker-label::before {
+            position: absolute;
+            top: 0px;
+            line-height: 22px;
+        }
+
+        .ql-stroke,
+        .ql-picker {
+            stroke: $body-color;
+        }
+    }
+}
+
+.gmap-autocomplete {
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: $body-color;
+    display: inline-block;
+    font-size: inherit;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    width: 100%;
+
+    &::placeholder {
+        color: #c0c4cc;
+        font-size: $font-size-base;
+    }
+}
+
+
+%dot-after {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        content: "";
+        animation: statusProcessing 1.2s ease-in-out infinite;
+    }
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+
+    &.default {
+        background-color: #d9d9d9;
+    }
+
+    &.success {
+        @extend %dot-after;
+        background-color: #1890ff;
+
+        &:after {
+            border: 1px solid #1890ff;
+        }
+    }
+
+    &.terminate {
+
+        @extend %dot-after;
+        background-color: #f5222d;
+
+        &:after {
+            border: 1px solid #f5222d;
+        }
+    }
+}
+
+.hidden-scroll {
+    overflow: hidden;
+}
