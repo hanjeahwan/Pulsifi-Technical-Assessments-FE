@@ -5,7 +5,7 @@ import router from './router'
 
 // create an axios instance
 const service = axios.create({
-    baseURL: process.env.API || 'http://localhost:3001/',
+    baseURL: process.env.NODE_ENV !== 'development' ? 'https://nestjs-pulsifi.herokuapp.com/' : 'http://localhost:3001/',
 })
 
 // request interceptor
