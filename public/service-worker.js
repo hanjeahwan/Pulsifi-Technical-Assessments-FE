@@ -20,7 +20,7 @@ const bgSyncPlugin = new workbox.backgroundSync.Plugin('myQueueName');
 
 workbox.routing.registerRoute(
     new RegExp('https://nestjs-pulsifi.herokuapp.com/.*'),
-    new workbox.strategies.networkOnly({
+    workbox.strategies.networkOnly({
         plugins: [bgSyncPlugin],
     }),
 );
