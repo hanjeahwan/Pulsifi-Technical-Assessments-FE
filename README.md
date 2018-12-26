@@ -1,6 +1,28 @@
-# pulsifi-client
+# Pulsifi Client Side
 
-## Project setup
+A web application where a recruiter can post a job and preview the job and candidate able to also view the job.
+
+The job should contain the follow fields:
+- Job Title
+- Job Location
+- Job Description
+- Date
+- Job Status
+
+### Front-end tech
+Deploy with [Netlify](https://www.netlify.com). Demo URL [https://pusifi.netlify.com/](https://pusifi.netlify.com/).
+* VueJS
+* Bootstrap Grid
+* Element UI
+* Axios
+* Quill Editor
+* Google Map
+* Content Loader
+* DayJS
+* PWA
+
+### Project setup
+
 ```
 npm install
 ```
@@ -20,15 +42,7 @@ npm run build
 npm run test
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
 ### Run your unit tests
 ```
 npm run test:unit
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
