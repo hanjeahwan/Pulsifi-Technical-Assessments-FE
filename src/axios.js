@@ -2,10 +2,10 @@ import axios from 'axios'
 import { MessageBox } from 'element-ui'
 import store from '@/store'
 import router from './router'
-console.warn('env',process.env)
+
 // create an axios instance
 const service = axios.create({
-    baseURL: process.env.BASE_API || 'http://localhost:3001/',
+    baseURL: process.env.API || 'http://localhost:3001/',
 })
 
 // request interceptor
