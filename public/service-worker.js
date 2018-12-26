@@ -17,13 +17,8 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 
 workbox.routing.registerNavigationRoute('/index.html');
 
-workbox.routing.registerRoute(
-    'https://nestjs-pulsifi.herokuapp.com/*',
-    workbox.strategies.staleWhileRevalidate({
-        cacheName: 'job',
-        cacheableResponse: { statuses: [0, 200] }
-    })
-);
+
+workbox.routing.registerRoute(new RegExp('https://nestjs-pulsifi.herokuapp.com/.*'), workbox.strategies.networkFirst({}), 'GET')
 
 const bgSyncPlugin = new workbox.backgroundSync.Plugin('SyncQueue', {
     maxRetentionTime: 24 * 60 // Retry for max of 24 Hours
