@@ -10,7 +10,7 @@ The job should contain the follow fields:
 - Job Status
 
 ### Front-end tech
-Deploy by [Netlify](https://www.netlify.com). Demo URL [https://pusifi.netlify.com/](https://pusifi.netlify.com/).
+Deploy with [Netlify](https://www.netlify.com). Demo URL [https://pusifi.netlify.com/](https://pusifi.netlify.com/).
 * VueJS
 * Bootstrap Grid
 * Element UI
