@@ -24,3 +24,15 @@ workbox.routing.registerRoute(
         cacheableResponse: { statuses: [0, 200] }
     })
 );
+
+const bgSyncPlugin = new workbox.backgroundSync.Plugin('SyncQueue', {
+    maxRetentionTime: 24 * 60 // Retry for max of 24 Hours
+});
+
+workbox.routing.registerRoute(
+    'https://nestjs-pulsifi.herokuapp.com/*',
+    workbox.strategies.networkOnly({
+        plugins: [bgSyncPlugin]
+    }),
+    'POST'
+);
