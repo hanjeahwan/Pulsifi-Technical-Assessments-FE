@@ -133,11 +133,13 @@
         align-items: center;
         position: relative;
         line-height: 64px;
-        overflow: hidden;
+        // overflow: hidden;
         
         img {
             transform: translate3d(0px, 4px, 0);
             position: absolute;
+            left: 0;
+            top: 0
         }
     }
 
