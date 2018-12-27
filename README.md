@@ -24,6 +24,8 @@ Deploy with [Netlify](https://www.netlify.com). Demo URL [https://pulsifi.netlif
 * Content Loader
 * DayJS
 * PWA
+* Push Notification
+
 
 ### Project setup
 
