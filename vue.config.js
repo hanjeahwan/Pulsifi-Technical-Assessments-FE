@@ -4,7 +4,8 @@ module.exports = {
       appleMobileWebAppCapable: 'yes',
       workboxPluginMode: 'InjectManifest',
       workboxOptions: {
-          swSrc: 'public/service-worker.js'
+          // swSrc: 'public/service-worker.js'
+            swSrc: 'public/OneSignalSDKWorker.js'
       },
       themeColor: '#4A90E2',
       msTileColor: '#4A90E2',
