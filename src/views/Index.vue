@@ -42,7 +42,7 @@
                         <div class="media mb-2">
                             <i class="el-icon-time mr-2"></i>
                             <div class="media-body">
-                                {{item.created_at | relativeTime}}
+                                {{item.created | relativeTime}}
                             </div>
                         </div>
                         <div class="media mb-2">
