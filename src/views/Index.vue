@@ -112,6 +112,7 @@ export default {
     },
     watch: {
         '$route'() {
+            this.page = 1
             this.fetchData()
         },
     },
@@ -120,7 +121,6 @@ export default {
             let query = {
                 keywords: this.keywords
             }
-            this.page = 1
             this.$router.push({ query: $filterURLQuery(query) })
         },
         async fetchData() {

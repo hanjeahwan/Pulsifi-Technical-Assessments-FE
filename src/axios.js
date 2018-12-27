@@ -37,10 +37,10 @@ service.interceptors.response.use((response) => {
             showConfirmButton: false,
             type: 'error'
         }).then(() => {
-            // store.commit('RESET_SYNC_STATE')
+            store.commit('REMOVE_TOKEN')
             router.push('/login')
         }).catch(() => {
-            // store.commit('RESET_SYNC_STATE')
+            store.commit('REMOVE_TOKEN')
             router.push('/login')
         })
     }
