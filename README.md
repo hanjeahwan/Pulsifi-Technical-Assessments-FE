@@ -14,7 +14,7 @@ Login:
 - password: abc123
 
 ### Front-end tech
-Deploy with [Netlify](https://www.netlify.com). Demo URL [https://pulsifi.netlify.com/](https://pusifi.netlify.com/).
+Deploy with [Netlify](https://www.netlify.com). Demo URL [https://pulsifi.netlify.com/](https://pulsifi.netlify.com/).
 * VueJS
 * Bootstrap Grid
 * Element UI
@@ -24,6 +24,8 @@ Deploy with [Netlify](https://www.netlify.com). Demo URL [https://pulsifi.netlif
 * Content Loader
 * DayJS
 * PWA
+* Push Notification
+
 
 ### Project setup
 
