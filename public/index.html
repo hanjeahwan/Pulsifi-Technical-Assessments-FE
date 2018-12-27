@@ -18,6 +18,12 @@
                 autoRegister: false,
                 notifyButton: {
                     enable: true,
+                    displayPredicate: function() {
+                        return OneSignal.isPushNotificationsEnabled()
+                        .then(function(isPushEnabled) {
+                            return !isPushEnabled;
+                        });
+                    },
                 },
             });
             OneSignal.registerForPushNotifications();
