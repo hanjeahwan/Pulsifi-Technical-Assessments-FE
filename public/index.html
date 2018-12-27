@@ -11,8 +11,9 @@
     <link rel="prefetch" href="https://pulsifi.netlify.com/fonts/element-icons.2fad952a.woff" as="font">
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
-        window.OneSignal.push(function() {
-            window.OneSignal.init({
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+            OneSignal.init({
                 appId: "4ec5f55f-894a-4b20-b96c-af8bf2f83bff",
             });
         });

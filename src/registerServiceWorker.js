@@ -5,7 +5,7 @@ import { MessageBox, Notification } from 'element-ui'
 
 
 if (process.env.NODE_ENV === 'production') {
-    register(`${process.env.BASE_URL}service-worker.js`, {
+    register(`${process.env.BASE_URL}/OneSignalSDKWorker.js`, {
         ready() {
             console.log(`%cService worker is active.`, `color:#F44336; font-weight: 700`)
         },
