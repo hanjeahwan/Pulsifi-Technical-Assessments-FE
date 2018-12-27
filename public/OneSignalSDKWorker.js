@@ -1,3 +1,8 @@
+importScripts('https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js');
+// have our sw update and control a web page as soon as possible.
+workbox.skipWaiting();
+workbox.clientsClaim();
+
 workbox.setConfig({
     "debug": true
 })
@@ -25,8 +30,5 @@ workbox.routing.registerRoute(
     }),
 );
 
-// have our sw update and control a web page as soon as possible.
-workbox.skipWaiting();
-workbox.clientsClaim();
 
-importScripts('https://cdn.onesignal.com/sdks/OneSignalSDKWorker.js');
+
