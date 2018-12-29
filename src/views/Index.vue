@@ -125,11 +125,11 @@ export default {
         },
         async fetchData() {
 
-            this.searchValue = this.$route.query.keywords || ''
+            this.keywords = this.$route.query.keywords || ''
 
             /* Default params when dont have any query in url */
             let params = {
-                keywords: this.searchValue,
+                keywords: this.keywords,
                 status: 1,
                 skip: this.paginateSkip
             }
