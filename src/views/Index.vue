@@ -3,7 +3,7 @@
         <div class="main-content">
             <el-header>
                 <div class="menu-logo">
-                    <img width="90" src="https://pulsifi.me/media/2017/06/logo-svg.svg" alt="pulsifi">
+                    <img width="90" src="https://profile.pulsifi.me/assets/images/logo.png" alt="pulsifi">
                 </div>
                     <div>
                         <router-link class="text-info" to="/job">
